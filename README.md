@@ -16,14 +16,12 @@
     <a href="https://github.com/kitao/pyxel">
       <img src="https://img.shields.io/badge/Pyxel-v1.9.12-blue?style=for-the-badge&logo=python&logoColor=white" alt="Pyxel V.1.9.12" ></a>
   </p>
+</div>
 
 <div>
   <h3>Resultado</h3>
   <div>
     <img src="img/interface.png" alt="Interface do Em Qual Mão Está?" width=300px>
-    <img src="img/Em Qual Mão Está.gif" alt="Em Qual Mão Está? gif" width=317px>
+    <img src="Em qual mão está.gif" alt="Em Qual Mão Está? gif" width=317px>
   </div>
-
-</div>
-</div>
 </div>
