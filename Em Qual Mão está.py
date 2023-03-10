@@ -19,8 +19,10 @@ class Hand(object):
                     if self.ring:
                         self.imgx= 128  #Troca de sprite(com o anel)
                     else:self.imgx= 96  #Troca de sprite(sem o anel)
+                elif pyxel.btnr(pyxel.MOUSE_BUTTON_LEFT):
+                    self.ring=pyxel.rndi(0,1)
         else: self.imgx=0    #Troca de sprite
-
+ 
     #Método de atualização da mão na interface
     def draw(self):
         pyxel.blt(self.x, self.y, 0, self.imgx, self.imgy, self.w, self.h)
@@ -45,11 +47,13 @@ class Game:
             #Evitando que o anel surja nas 2 mãos
             if self.rightHand.ring == 1: self.leftHand.ring= 0
             if self.rightHand.ring== 0:  self.leftHand.ring= 1
+            #if self.leftHand.ring == 1: self.rightHand.ring= 0
+            #if self.leftHand.ring== 0:  self.rightHand.ring= 1
+            
             #Verificando interação com os Objetos
             for hand in self.handsList:
                 hand.verClick()
         else: pass
-
     #Método de atualização da interface
     def draw(self):
         pyxel.cls(0)
